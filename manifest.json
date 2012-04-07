@@ -1,0 +1,16 @@
+{
+	"name": "Japanese Mayonnaise",
+	"version": "2012.1.27",
+	"description": "Removes animated notification area from search results.",
+	"content_scripts": [
+		{
+			"matches": [
+			    "http://www.google.com/*",
+			    "https://www.google.com/*"
+			],
+			"js": ["jquery.js", "content.js"],
+			"run_at": "document_end"
+		}
+	],
+	"permissions": [ "<all_urls>" ]
+}
